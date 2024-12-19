@@ -46,7 +46,7 @@
 
     - name: Transfer all html files to templates dir
       ansible.builtin.shell: 
-        cmd: mv *.html templates/
+        cmd: mv index.html result.html templates/
 
     - name: Start python server 
       ansible.builtin.shell:
