@@ -27,6 +27,10 @@
         src: "{{ item }}"
         dest: "{{ remote_dir }}/"
       loop: "{{ local_files }}"
+
+    - name: Update
+      ansible.builtin.shell: 
+        cmd: sudo apt update
         
     - name: Install python
       ansible.builtin.shell: 
