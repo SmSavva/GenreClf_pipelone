@@ -40,13 +40,13 @@
       ansible.builtin.shell: 
         cmd: pip install -r genre_clf/requirements.txt
 
-    - name: Start python server asynchronously
-      ansible.builtin.shell:
-        cmd: "python3 genre_clf/app.py"
-      async: 3600  # Maximum running time (1 hour)
-      poll: 0      # Do not wait for completion, continue with next tasks
-      register: python_output
-
     - name: Print the website link
       ansible.builtin.debug:
         msg: "You can access the application at: http://{{ ansible_host }}:5000/"
+
+    - name: Start python server 
+      ansible.builtin.shell:
+        cmd: python3 genre_clf/app.py
+ 
+
+    
