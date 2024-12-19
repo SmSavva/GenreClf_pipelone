@@ -40,9 +40,13 @@
       ansible.builtin.shell: 
         cmd: pip install --upgrade -r genre_clf/requirements.txt
 
+    - name: Make templates
+      ansible.builtin.shell: 
+        cmd: mkdir genre_clf/templates
+
     - name: Transfer all html files to templates dir
       ansible.builtin.shell: 
-        cmd: mv index.html result.html templates/
+        cmd: mv genre_clf/index.html genre_clf/result.html genre_clf/templates/
 
     - name: Start python server 
       ansible.builtin.shell:
