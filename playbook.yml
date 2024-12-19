@@ -38,7 +38,7 @@
 
     - name: Install all requirement
       ansible.builtin.shell: 
-        cmd: pip install -r genre_clf/requirements.txt
+        cmd: pip install --upgrade -r genre_clf/requirements.txt
 
     - name: Print the website link
       ansible.builtin.debug:
