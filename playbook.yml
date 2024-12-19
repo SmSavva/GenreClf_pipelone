@@ -5,13 +5,13 @@
   vars:
     remote_dir: "/home/ubuntu/genre_clf"
     local_files:
-      - "genre_clf/server/requirements.txt"
-      - "genre_clf/server/app.py"
-      - "genre_clf/server/utils/feature_extraction.py"
-      - "genre_clf/server/model/min_max_scaler.pkl"
-      - "genre_clf/server/model/xgb_mgen.pkl"
-      - "genre_clf/server/templates/index.html"
-      - "genre_clf/server/templates/result.html"
+      - "server/requirements.txt"
+      - "server/app.py"
+      - "server/utils/feature_extraction.py"
+      - "server/model/min_max_scaler.pkl"
+      - "server/model/xgb_mgen.pkl"
+      - "server/templates/index.html"
+      - "server/templates/result.html"
   tasks:
 
     - name: Ensure the target directory exists
