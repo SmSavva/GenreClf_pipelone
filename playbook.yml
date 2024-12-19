@@ -28,10 +28,6 @@
         dest: "{{ remote_dir }}/"
       loop: "{{ local_files }}"
         
-    - name: Update files
-      ansible.builtin.shell: 
-        cmd: sudo apt update
-        
     - name: Install python
       ansible.builtin.shell: 
         cmd: sudo apt install python3-pip
