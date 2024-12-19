@@ -5,11 +5,11 @@
   vars:
     remote_dir: "/home/ubuntu/genre_clf"
     local_files:
-      - /home/ubuntu/jenkins/workspace/smagina_deploy/server/*.txt
-      - /home/ubuntu/jenkins/workspace/smagina_deploy/server/*.py
-      - /home/ubuntu/jenkins/workspace/smagina_deploy/server/model/*.pkl
-      - /home/ubuntu/jenkins/workspace/smagina_deploy/server/templates/*.html
-      - /home/ubuntu/jenkins/workspace/smagina_deploy/server/utils/*.py
+      - ~/jenkins/workspace/smagina_deploy/server/*.txt
+      - ~/jenkins/workspace/smagina_deploy/server/*.py
+      - ~/jenkins/workspace/smagina_deploy/server/model/*.pkl
+      - ~/jenkins/workspace/smagina_deploy/server/templates/*.html
+      - ~/jenkins/workspace/smagina_deploy/server/utils/*.py
   tasks:
 
     - name: Ensure the target directory exists
