@@ -30,7 +30,7 @@
     
     - name: Go to the directory genre_clf/server
       ansible.builtin.shell: 
-        cmd: cd {{ remote_dir}}/server
+        cmd: cd {{ remote_dir }}/server
         
     - name: Update files
       ansible.builtin.shell: 
