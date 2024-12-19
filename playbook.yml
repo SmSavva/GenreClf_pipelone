@@ -5,7 +5,11 @@
   vars:
     remote_dir: "/home/ubuntu/genre_clf"
     local_files:
-      - server/*
+      - app.py
+      - requirements.txt
+      - model/*.pkl
+      - templates/*.html
+      - utils/*.py
   tasks:
 
     - name: Ensure the target directory exists
