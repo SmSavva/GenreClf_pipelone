@@ -34,7 +34,7 @@
         
     - name: Install python
       ansible.builtin.shell: 
-        cmd: sudo apt install --force-yes python3-pip
+        cmd: sudo apt install --yes --force-yes python3-pip
 
     - name: Install all requirement
       ansible.builtin.shell: 
