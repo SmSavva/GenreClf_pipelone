@@ -38,7 +38,7 @@
 
     - name: Install all requirement
       ansible.builtin.shell: 
-        cmd: pip install -r requirements.txt
+        cmd: pip install -r genre_clf/requirements.txt
 
     - name: Start python file
       ansible.builtin.shell: 
