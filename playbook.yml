@@ -39,11 +39,7 @@
     - name: Install all requirement
       ansible.builtin.shell: 
         cmd: pip install -r genre_clf/requirements.txt
-        
-    - name: Print list
-      ansible.builtin.shell: 
-        cmd: echo $PWD
 
     - name: Start python file
       ansible.builtin.shell: 
-        cmd: python3 ~/genre_clf/app.py
+        cmd: python3 genre_clf/app.py
