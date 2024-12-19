@@ -29,6 +29,14 @@
     - name: Go to the directory genre_clf/server
       ansible.builtin.shell: 
         cmd: cd {{ remote_dir}}/server
+        
+    - name: Update files
+      ansible.builtin.shell: 
+        cmd: sudo apt update
+        
+    - name: Install python
+      ansible.builtin.shell: 
+        cmd: sudo apt install python3-pip
   
     - name: Install all requirement
       ansible.builtin.shell:
