@@ -5,7 +5,7 @@
   vars:
     remote_dir: "/home/ubuntu/genre_clf"
     local_files:
-      - /server/*
+      - server/*
   tasks:
 
     - name: Ensure the target directory exists
