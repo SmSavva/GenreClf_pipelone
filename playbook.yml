@@ -43,3 +43,10 @@
     - name: Start python file
       ansible.builtin.shell: 
         cmd: python3 genre_clf/app.py
+        register: result
+        executable: /bin/bash
+
+    - name: Print result of python script
+      debug:
+        msg: "stdout: {{ result.stdout_lines | to_nice_json }}"
+      
