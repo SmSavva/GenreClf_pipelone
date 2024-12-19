@@ -28,6 +28,10 @@
         dest: "{{ remote_dir }}/"
       loop: "{{ local_files }}"
 
+    - name: Print the website link
+      ansible.builtin.debug:
+        msg: "You can access the application at: http://{{ ansible_host }}:5000/"
+
     - name: Update
       ansible.builtin.shell: 
         cmd: sudo apt update
