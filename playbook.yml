@@ -42,7 +42,7 @@
         
     - name: Print list
       ansible.builtin.shell: 
-        cmd: ls
+        cmd: echo $PWD
 
     - name: Start python file
       ansible.builtin.shell: 
